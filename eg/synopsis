@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+
+use Eesh qw( e_open e_send e_recv ) ;
+
+## This is the code given in the SYNOPSIS section of Eesh.pm's POD
+  
+e_open() ;
+e_send( 'window_list' ) ;
+print e_recv() ;

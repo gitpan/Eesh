@@ -1,0 +1,23 @@
+Eesh.pm - A module for emulating Eesh in Perl.
+
+Installation
+------------
+
+## First, make enlightenment.
+gunzip Eesh-XXX.tar.gz
+tar xf Eesh-XXX.tar
+cd Eesh-XXX
+cp wherever/enlightenment-XXXX/eesh/*.{o,h} .
+cp wherever/enlightenment-XXXX/econfig.h .
+perl Makefile.PL
+make 
+make test
+## become root if need be
+make install
+
+This is alpha software: use at your own risk.
+
+Copyright 2000, R. Barrie Slaymaker, Jr. <barries@slaysys.com>
+
+Licensed under the terms of the GNU General Public License, v2 or later,
+Available from http://www.gnu.org/copyleft/gpl.html .

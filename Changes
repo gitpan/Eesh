@@ -1,0 +1,20 @@
+Revision history for Perl extension Eesh.
+
+0.1 Thu Apr 20 01:37:51 EDT 2000
+	- made e_recv() blocking by default
+	- added ':all' export tag
+	- scribbled some POD
+	- scribbled an Installation section in README
+	- added { non_blocking => 1 } to e_recv()
+	- allowed e_recv() to take strings and call e_send()
+	- rewrote test.pl to be legible and modern
+	- added eg/synopsis
+	- added eg/rehome
+	- added eg/grab
+	
+0.02
+	- Minor revisions, renamed eesh_...() to e_...()
+
+0.01  Fri Mar 24 00:16:31 2000
+	- original version; created by h2xs 1.19
+
