@@ -4,7 +4,7 @@ use strict ;
 use vars qw( $VERSION ) ;
 use Eesh qw( :all ) ;
 
-$VERSION = '1.0' ;
+$VERSION = '1.1' ;
 
 =head1 NAME
 
@@ -41,7 +41,7 @@ Barrie Slaymaker <barries@slaysys.com>
 my $debug = 1 ;
 
 eval {
-   use Regexp::Shellish qw( compile_shellish ) ;
+   use Regexp::Shellish 0.92 qw( compile_shellish ) ;
    1 ;
 } ;
 my $got_shellish = ! $@ ;
@@ -54,7 +54,7 @@ my $re = join(
       $_ =~ m{^/(.*)/$}
          ? $1
 	 : $got_shellish
-	    ? compile_shellish $_
+	    ? compile_shellish( $_, { anchors => 0 } )
 	    : quotemeta $_
    } @ARGV
 ) ;

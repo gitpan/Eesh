@@ -12,7 +12,7 @@ require AutoLoader;
 
 @EXPORT_OK = qw( e_open e_send e_recv );
 %EXPORT_TAGS = ( all => \@EXPORT_OK ) ;
-$VERSION = '0.1';
+$VERSION = '0.11';
 
 bootstrap Eesh $VERSION;
 
