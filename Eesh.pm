@@ -12,7 +12,7 @@ require AutoLoader;
 
 @EXPORT_OK = qw( e_open e_send e_recv );
 %EXPORT_TAGS = ( all => \@EXPORT_OK ) ;
-$VERSION = '0.11';
+$VERSION = '0.2';
 
 bootstrap Eesh $VERSION;
 
@@ -48,7 +48,7 @@ __END__
 
 =head1 NAME
 
-Eesh - Perl extension for blah blah blah
+Eesh - Enlightenment Window Manager IPC Library
 
 =head1 SYNOPSIS
 
@@ -69,7 +69,7 @@ Eesh - Perl extension for blah blah blah
 
 =head1 DESCRIPTION
 
-Eesh.pm provides very simple wrappers around the routines from eesh.
+Eesh.pm provides simple wrappers around the routines from eesh (included).
 
 This code is in alpha mode, please let me know of any improvements,
 and patches are especially welcome.
@@ -117,9 +117,34 @@ Passed to e_recv() to make it non blocking
 
 =back
 
-=head1 AUTHOR
+=head1 LICENSE
 
-Barrie Slaymaker <barries@slaysys.com>
+Copyright (C) 2000 Barrie Slaymaker, Carsten Haitzler, Geoff Harrison and various contributors 
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+  
+The above copyright notice and this permission notice shall be included in
+all copies of the Software, its documentation and marketing & publicity 
+materials, and acknowledgment shall be given in the documentation, materials
+and software packages that this Software was used.
+   
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER 
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+=head1 AUTHORS
+
+Eesh: Barrie Slaymaker <barries@slaysys.com>
+
+eesh: Carsten Haitzler, Geoff Harrison and various contributors 
 
 =head1 SEE ALSO
 
