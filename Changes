@@ -1,5 +1,10 @@
 Revision history for Perl extension Eesh.
 
+0.3  Sat Apr 22 01:34:17 EDT 2000
+	- Fixed up a couple of bugs in e_recv()
+	- Changed e_recv() to be more efficient and simpler 
+	- Added some high level API functions.
+
 0.2  Fri Apr 21 13:28:17 EDT 2000
 	- copied gobs of eesh code in to Eesh.xs, then deleted most
 	  of it.  Eesh now builds w/out having to copy eesh's .o's
